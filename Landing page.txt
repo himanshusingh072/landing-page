@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Expansive Landing Page</title>
+    <style>
+        body, h1, h2, p {
+        margin: 0;
+        padding: 0;
+        }
+        body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        }
+
+        .header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 0;
+        }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .nav-list {
+        list-style: none;
+        display: flex;
+    }
+
+    .nav-list li {
+        margin-right: 20px;
+    }
+
+    .nav-list a {
+        text-decoration: none;
+        color: #fff;
+    }
+    .nav-list a:hover{
+        background-color: #ccc;
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    .hero {
+    background-image: url('hero-background.jpg');
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero-content {
+    color: black;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 0px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+#chero{
+    padding-top: 10px;
+}
+.hero-content h1{
+    padding-bottom: 10px;
+}
+.cta-button {
+    display: inline-block;
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.cta-button:hover{
+    cursor: pointer;
+    background-color: #c75408;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.feature {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+}
+.feature p{
+    display: inline-block;
+    padding: 20px;
+    margin: 0 0.5%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+.customers {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.customer {
+    display: inline-block;
+    padding: 20px;
+    margin: 0 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.author {
+    font-style: italic;
+    color: #777;
+}
+
+.contact {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+.contact h2{
+    padding-bottom: 10px;
+}
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    
+}
+.contact-form button:hover{
+    background-color: #ad3607;
+    cursor: pointer;
+}
+.pricing {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f4f4f4;
+}
+
+.pricing-plan {
+    display: inline-block;
+    width: 25%;
+    padding: 20px;
+    margin: 0 1%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.price {
+    font-size: 24px;
+    color: #ff6600;
+    margin-top: 10px;
+}
+
+.cta-section {
+    text-align: center;
+    padding: 100px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+.cta-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">Company Name</div>
+            <ul class="nav-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">login</a></li>
+                <li><a href="#">Signup</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Our Landing Page</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nihil fugiat deserunt dolores exercitationem odio quisquam qui in, et consequuntur.</p>
+            <a href="#" class="cta-button">Learn More</a>
+        </div>
+        <div class="hero-content" id="chero">
+            <img src="https://e7.pngegg.com/pngimages/434/811/png-clipart-computer-cartoon-computer-child-computer-thumbnail.png">
+        </div>
+    </section>
+    <section class="customers">
+        <h2>What Our Customers Say</h2>
+        <div class="customer">
+            <p>"This is an amazing product! It has changed the way I work."</p>
+            <p class="author">- John Doe</p>
+        </div>
+        <div class="customer">
+            <p>"I'm so glad I found this service. It's made my life much easier."</p>
+            <p class="author">- Jane Smith</p>
+        </div>
+    </section>
+
+    
+    <section class="features">
+        <div class="feature">
+            <h2>Feature 1</h2>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto veritatis id quis iure odit, quo perspiciatis necessitatibus fuga porro alias magni dolores esse, amet unde praesentium eum iste facere delectus! Minus, aperiam cupiditate possimus consectetur error eaque rerum nihil at deleniti blanditiis velit excepturi tenetur ad atque in pariatur doloremque.
+            </p>
+        </div>
+        <div class="feature">
+            <h2>Feature 2</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur fuga architecto id cupiditate adipisci magnam officiis corporis temporibus nemo at reiciendis minima suscipit, deleniti placeat vel. Quod est maiores, ea perspiciatis ipsam repellendus molestiae maxime ullam deserunt labore nostrum optio! </p>
+        </div>
+        <div class="feature">
+            <h2>Feature 3</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, similique. Numquam facilis quasi dolor itaque rem repudiandae, voluptatem, temporibus ex fuga aliquid repellendus assumenda recusandae dolores quo cum dolorem quaerat est! Voluptas quasi iure facilis rem distinctio odio recusandae officia quibusdam qui perspiciatis.
+            </p>
+        </div>
+    </section>
+    <section class="pricing">
+        <h2>Pricing Plans</h2>
+        <div class="pricing-plan">
+            <h3>Day Plan</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="price">₹19/day</p>
+            <a href="#" class="cta-button">Get Started</a>
+        </div>
+        <div class="pricing-plan">
+            <h3>Monthly Plan</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="price">₹299/month</p>
+            <a href="#" class="cta-button">Get Started</a>
+        </div>
+        <div class="pricing-plan">
+            <h3>Yearly Plan</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="price">₹999/year</p>
+            <a href="#" class="cta-button">Get Started</a>
+        </div>
+    </section>
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <input type="number" placeholder="Your Number">
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2>Ready to Get Started?</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="cta-button">Sign Up Now</a>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>&copy; 2023 Expansive Landing Page. All rights reserved.</p>
+    </footer>
+</body>
+</html>
